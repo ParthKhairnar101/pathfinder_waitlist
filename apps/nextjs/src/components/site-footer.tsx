@@ -8,7 +8,7 @@ import { ModeToggle } from "~/components/mode-toggle";
 function getCopyrightText() {
   const currentYear = new Date().getFullYear();
   const copyrightTemplate = String(
-    "Copyright © ${currentYear} Nextify Limited. All rights reserved.",
+    "Copyright © ${currentYear} Pathfinder. All rights reserved.",
   );
   return copyrightTemplate?.replace("${currentYear}", String(currentYear));
 }

@@ -8,7 +8,6 @@ import { Toaster } from "@saasfly/ui/toaster";
 
 import { TailwindIndicator } from "~/components/tailwind-indicator";
 import { ThemeProvider } from "~/components/theme-provider";
-import { siteConfig } from "~/config/site";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -22,40 +21,12 @@ const fontHeading = localFont({
 });
 
 export const metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  keywords: [
-    "Next.js",
-    "Shadcn ui",
-    "Sass",
-    "Fast ",
-    "Simple ",
-    "Easy",
-    "Cloud Native",
-  ],
-  authors: [
-    {
-      name: "Saasfly",
-    },
-  ],
-  creator: "Saasfly",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    siteName: siteConfig.name,
-  },
+  title: "Waitlist",
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.ico",
+    shortcut: "/favicon-16x16.png",
     // apple: "/apple-touch-icon.png",
   },
-  metadataBase: new URL("https://waitlist.saasfly.io/"),
   // manifest: `${siteConfig.url}/site.webmanifest`,
 };
 

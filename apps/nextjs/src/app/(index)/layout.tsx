@@ -2,7 +2,6 @@ import { Suspense } from "react";
 
 import { NavBar } from "~/components/navbar";
 import { SiteFooter } from "~/components/site-footer";
-import { getMarketingConfig } from "~/config/ui/marketing";
 
 export default function MarketingLayout({
   children,
@@ -13,7 +12,6 @@ export default function MarketingLayout({
     <div className="flex min-h-screen flex-col">
       <Suspense fallback="...">
         <NavBar
-          items={getMarketingConfig().mainNav}
           scroll={true}
           dropdown={{ dashboard: "Dashboard" }}
         />
